@@ -1,4 +1,6 @@
 <h1># Tools :</h1>  
+- cURL (CLI HTTP client)
+- BurpSuite (HTTP proxy, scanner)
 - Hashcat / john <br/> 
 - hashid  <br/>
 - cewl : creates wordlist by crawling websites <br/>
