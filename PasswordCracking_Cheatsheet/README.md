@@ -21,7 +21,6 @@ OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/bl
 <h3>Dictionnary</h3>  
 <code>john --format=&lt;format&gt; target.txt --wordlist=dictionnary.txt</code><br>
 <code>hashcat --username -m &lt;mode&gt; target.txt dictionnary.txt</code><br>
-<br>
 <h3>Rules</h3>
 <code>john --format=&lt;format&gt; target.txt --wordlist=dictionnary.txt --rules</code><br>
 <code>hashcat --username -m &lt;mode&gt; target.txt dictionnary.txt -r OneRuleToRuleThemAll.rule</code><br>
