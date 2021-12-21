@@ -1,5 +1,5 @@
 <h1># Tools :</h1>  
-- Hashcat / john    
+- Hashcat / john      
 - hashid  
 - cewl : creates wordlist by crawling websites 
 ex : cewl -d 5 -w wordlist.txt http://website.com/  
