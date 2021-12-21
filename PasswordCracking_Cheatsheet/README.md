@@ -16,8 +16,9 @@ OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/bl
   
 <h1># Cheatsheet</h1>  
 <h3>Dictionnary</h3>  
-<h5>Hashcat</h5>  
-<code>hashcat -a 0 -m <hash_type> <hash> <wordlist> -r <rule></code>     
-```hashcat --username -m <mode> hash.txt dictionnary.txt```  
-<h5>John</h5>  
-```john --format=<format> hash.txt --wordlist=dictionnary.txt```
+john --format=<format> target.txt --wordlist=dictionnary.txt
+hashcat --username -m <mode> target.txt dictionnary.txt
+ 
+<h3>Rules</h3>
+john --format=<format> target.txt --wordlist=dictionnary.txt --rules
+hashcat --username -m <mode> target.txt dictionnary.txt -r OneRuleToRuleThemAll.rule
