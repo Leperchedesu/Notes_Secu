@@ -19,8 +19,8 @@ OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/bl
 
 <h1># Cheatsheet</h1>  
 <h3>Dictionnary</h3>  
-<code>john --format=&lt;format&gt; target.txt --wordlist=dictionnary.txt</code><br>
-<code>hashcat --username -m &lt;mode&gt; target.txt dictionnary.txt</code><br>
+<code>john --format=&lt;format&gt; hash.txt --wordlist=/usr/share/wordlists/rockyou.txt</code><br>
+<code>hashcat --username -m &lt;mode&gt; hash.txt /usr/share/wordlists/rockyou.txt</code><br>
 <h3>Rules</h3>
-<code>john --format=&lt;format&gt; target.txt --wordlist=dictionnary.txt --rules</code><br>
-<code>hashcat --username -m &lt;mode&gt; target.txt dictionnary.txt -r OneRuleToRuleThemAll.rule</code><br>
+<code>john --format=&lt;format&gt; hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --rules</code><br>
+<code>hashcat --username -m &lt;mode&gt; hash.txt /usr/share/wordlists/rockyou.txt -r OneRuleToRuleThemAll.rule</code><br>
