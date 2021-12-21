@@ -1,7 +1,7 @@
 <h1># Tools :</h1>  
 - Hashcat / john   
 - hashid  
-- cewl : creates wordlist by crawling websites  
+- cewl : creates wordlist by crawling websites 
 ex : cewl -d 5 -w wordlist.txt http://website.com/  
 (d : depth of the crawling)  
 - cupp : creates password lists from OSINT informations  
