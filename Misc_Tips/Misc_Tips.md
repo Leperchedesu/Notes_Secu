@@ -1,4 +1,4 @@
-## Find the meaning of unknows error codes with certutil:
+## Find the meaning of unknown error codes with certutil:
 `Certutil -error <error_id>`
 
 ## Access HTTPS proxy with proxychains:
