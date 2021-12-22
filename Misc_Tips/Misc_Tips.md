@@ -1,5 +1,5 @@
 ## Find the meaning of unknown error codes with certutil:
-`Certutil -error <error_id>`
+`certutil -error <error_id>`
 
 ## Access HTTPS proxy with proxychains:
 Proxychains supports SOCKS4, SOCKS5 and HTTP but not HTTPS.  
