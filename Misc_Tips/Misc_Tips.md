@@ -13,17 +13,17 @@ Then in `/etc/proxychains.conf` :
 From <https://github.com/rofl0r/proxychains-ng/issues/337>  
   
 ## File transfer techniques:  
-# Using python:  
+### Using python:  
 `python2 -m SimpleHTTPServer <PORT>`  
 `python3 -m http.server <PORT>`  
   
-# Using a compiled binary for Windows:  
+### Using a compiled binary for Windows:  
 `pip install pyinstaller`  
 `pyinstaller web.py --onefile`  
   
 `web.exe <PORT>`  
   
-# Using base64 encoding:  
+### Using base64 encoding:  
 Server-side (Linux)  
 `base64 -w 0 <FILE> | xclip -selection clipboard`  
   
