@@ -1,2 +1,2 @@
 # Notes_Secu
-My infosec notes
+My personal infosec notes
