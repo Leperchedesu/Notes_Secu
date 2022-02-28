@@ -13,7 +13,7 @@ Then in `/etc/proxychains.conf` :
 From <https://github.com/rofl0r/proxychains-ng/issues/337>  
  
    
-## Setting up an SSH tunnel between the target and source:  
+## Setting up an SSH tunnel between the target and source with nc as proxy command:  
 TODO
 
 ## File transfer techniques:  
