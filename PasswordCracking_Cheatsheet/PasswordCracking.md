@@ -1,4 +1,4 @@
-<h1># Tools :</h1>  
+# Tools :  
 - Hashcat / john <br/> 
 - hashid  <br/>
 - cewl : creates wordlist by crawling websites <br/>
@@ -7,20 +7,20 @@ ex : cewl -d 5 -w wordlist.txt http://website.com/  <br/>
 - cupp : creates password lists from OSINT informations  <br/>
 <br>
 
-<h1># Wordlists</h1>  
+# Wordlists   
 - username=password  <br/>
 - rockyou  <br/>
 - SecLists (https://github.com/danielmiessler/SecLists)  <br/>
 <br>
 
-<h1># Rules</h1>   
+# Rules   
 OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/blob/master/OneRuleToRuleThemAll.rule  <br/>
 <br>
 
-<h1># Cheatsheet</h1>  
-<h3>Dictionnary</h3>  
-<code>john --format=&lt;format&gt; hash.txt --wordlist=/usr/share/wordlists/rockyou.txt</code><br>
-<code>hashcat --username -m &lt;mode&gt; hash.txt /usr/share/wordlists/rockyou.txt</code><br>
-<h3>Rules</h3>
-<code>john --format=&lt;format&gt; hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --rules</code><br>
-<code>hashcat --username -m &lt;mode&gt; hash.txt /usr/share/wordlists/rockyou.txt -r OneRuleToRuleThemAll.rule</code><br>
+# Cheatsheet  
+### Dictionnary   
+<code>john --format=<format> hash.txt --wordlist=/usr/share/wordlists/rockyou.txt</code><br>
+<code>hashcat --username -m <mode> hash.txt /usr/share/wordlists/rockyou.txt</code><br>
+### Rules   
+<code>john --format=<format> hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --rules</code><br>
+<code>hashcat --username -m <mode> hash.txt /usr/share/wordlists/rockyou.txt -r OneRuleToRuleThemAll.rule</code><br>
