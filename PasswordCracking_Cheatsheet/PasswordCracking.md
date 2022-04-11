@@ -28,5 +28,5 @@ OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/bl
 <code>hashcat --username -m <mode> hash.txt /usr/share/wordlists/rockyou.txt -r OneRuleToRuleThemAll.rule</code><br>
 
 ### Zip cracking  
-
+ <code>fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt <file_to_crack>.zip</code>
  
