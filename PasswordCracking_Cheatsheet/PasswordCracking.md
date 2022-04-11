@@ -6,6 +6,7 @@ ex : cewl -d 5 -w wordlist.txt http://website.com/  <br/>
 (d : depth of the crawling)  <br/>
 - cupp : creates password lists from OSINT informations  <br/>
 <br>
+- fcrackzip : for cracking zip passwords  
 
 # Wordlists   
 - username=password  <br/>
@@ -21,6 +22,9 @@ OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/bl
 ### Dictionnary   
 <code>john --format=<format> hash.txt --wordlist=/usr/share/wordlists/rockyou.txt</code><br>
 <code>hashcat --username -m <mode> hash.txt /usr/share/wordlists/rockyou.txt</code><br>
+
 ### Rules   
 <code>john --format=<format> hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --rules</code><br>
 <code>hashcat --username -m <mode> hash.txt /usr/share/wordlists/rockyou.txt -r OneRuleToRuleThemAll.rule</code><br>
+
+ 
