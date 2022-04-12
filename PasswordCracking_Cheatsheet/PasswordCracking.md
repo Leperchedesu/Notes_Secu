@@ -11,6 +11,7 @@ ex : cewl -d 5 -w wordlist.txt http://website.com/  <br/>
 # Wordlists   
 - username=password  <br/>
 - rockyou  <br/>
+- richelieu for french targets <br/>
 - SecLists (https://github.com/danielmiessler/SecLists)  <br/>
 <br>
 
