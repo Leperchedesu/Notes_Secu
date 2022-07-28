@@ -21,13 +21,13 @@ OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/bl
 
 # Cheatsheet  
 ### Dictionnary   
-<code>john --format=<format> hash.txt --wordlist=/usr/share/wordlists/rockyou.txt</code><br>
+<code>john --format=md5 hash.txt --wordlist=/usr/share/wordlists/rockyou.txt</code><br>
 <code>hashcat --username -m 1800 hash.txt /usr/share/wordlists/rockyou.txt</code><br>
 
 ### Rules   
-<code>john --format=<format> hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --rules</code><br>
+<code>john --format=md5 hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --rules</code><br>
 <code>hashcat --username -m 1800 hash.txt /usr/share/wordlists/rockyou.txt -r OneRuleToRuleThemAll.rule</code><br>
 
 ### Zip cracking  
- <code>fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt <file_to_crack>.zip</code>
+ <code>fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt file_to_crack.zip</code>
  
