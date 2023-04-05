@@ -11,7 +11,10 @@ Then in `/etc/proxychains.conf` :
 `http 127.0.0.1 19999`
 
 From <https://github.com/rofl0r/proxychains-ng/issues/337>  
- 
+  
+## SSH Tunneling 
+Use `sshuttle` : https://github.com/sshuttle/sshuttle  
+  
 ## Temporarily turn off bash history:  
 `unset HISTFILE`  
 `set +o history`   
