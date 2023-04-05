@@ -13,12 +13,9 @@ Then in `/etc/proxychains.conf` :
 From <https://github.com/rofl0r/proxychains-ng/issues/337>  
  
 ## Temporarily turn off bash history:  
+`unset HISTFILE`  
 `set +o history`   
-     
-     
-## Setting up an SSH tunnel between the target and source with nc as proxy command:  
-TODO
-
+  
 ## File transfer techniques: 
 ### Using SMB:  
 `impacket-smbserver share .`  
