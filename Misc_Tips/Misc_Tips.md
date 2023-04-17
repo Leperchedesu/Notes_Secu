@@ -12,8 +12,12 @@ Then in `/etc/proxychains.conf` :
 
 From <https://github.com/rofl0r/proxychains-ng/issues/337>  
   
-## SSH Tunneling 
-Use `sshuttle` : https://github.com/sshuttle/sshuttle  
+## SSH Pivoting/Tunneling 
+- Use `sshuttle` : https://github.com/sshuttle/sshuttle  
+- Use `ssh` + `proxychains` :  
+  `ssh -D 9999 john@10.10.110.50`
+  Then `proxychains <command>` with the line `socks4 127.0.0.1 9999` in the `proxychains4.conf` file  
+     
   
 ## Temporarily turn off bash history:  
 `unset HISTFILE`  
