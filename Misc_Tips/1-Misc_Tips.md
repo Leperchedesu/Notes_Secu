@@ -55,5 +55,5 @@ Target-side - Windows
 `echo <BASE64_FILECONTENT> > tmp_file_base64.txt`  
 `certutil -decode tmp_file_base64.txt <OUTPUT_FILE>`  
 `del tmp_file_base64.txt`  
-From <https://notes.qazeer.io/general/file_transfer>    
+*(Several techniques are from <https://notes.qazeer.io/general/file_transfer>)*    
   
