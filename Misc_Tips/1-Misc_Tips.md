@@ -18,8 +18,10 @@ From <https://github.com/rofl0r/proxychains-ng/issues/337>
   `ssh -D 9999 john@10.10.110.50`
   Then `proxychains <command>`   
   (with the config `socks4 127.0.0.1 9999` in the `proxychains4.conf` file)  
-     
-  
+   
+ ## Leave a command running when the SSH session is disconnected with `nohup`:  
+`nohup nmap -Pn -A -p- -oA results_nmap 192.168.210.10-20 &exit`   
+   
 ## Temporarily turn off bash history:  
 `unset HISTFILE`  
 `set +o history`   
