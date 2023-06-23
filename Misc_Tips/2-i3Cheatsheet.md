@@ -6,6 +6,10 @@
 New workspace : `$mod` + `shift` + `num`  
 Go to workspace : `$mod` + `num`  
 
+### Windows management  
+Select another window : `$mod` + `left/right arrow`  
+Move a window : `$mod` + `shift` + `left/right arrow`  
+    
 ### Close current window  
 `$mod` + `shift` + `q`  
 
