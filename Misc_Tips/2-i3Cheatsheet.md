@@ -6,3 +6,5 @@
 New workspace : `$mod` + `shift` + `num`  
 Go to workspace : `$mod` + `num`  
 
+### Close current window  
+`$mod` + `shift` + `q`
