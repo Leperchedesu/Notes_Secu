@@ -13,10 +13,12 @@ ex : cewl -d 5 -w wordlist.txt http://website.com/  <br/>
 - rockyou  <br/>
 - richelieu for french targets <br/>
 - SecLists (https://github.com/danielmiessler/SecLists)  <br/>
+- Wordlist for french targets: https://github.com/clem9669/wordlists  <br/> 
 <br>
 
 # Rules   
-OneRuleToRuleThemAll : https://github.com/NotSoSecure/password_cracking_rules/blob/master/OneRuleToRuleThemAll.rule  <br/>
+- OneRuleToRuleThemAll: https://github.com/NotSoSecure/password_cracking_rules/blob/master/OneRuleToRuleThemAll.rule  <br/>
+- Rules for companies: https://github.com/clem9669/hashcat-rule <br/>  
 <br>
 
 # Cheatsheet  
