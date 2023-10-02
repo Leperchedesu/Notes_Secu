@@ -1,6 +1,7 @@
 # Tools :  
 - Hashcat / john <br/> 
 - hashid  <br/>
+- LDAPWordlistHarvester : https://github.com/p0dalirius/LDAPWordlistHarvester   
 - cewl : creates wordlist by crawling websites <br/>
 ex : cewl -d 5 -w wordlist.txt http://website.com/  <br/>
 (d : depth of the crawling)  <br/>
@@ -9,16 +10,18 @@ ex : cewl -d 5 -w wordlist.txt http://website.com/  <br/>
 - fcrackzip : for cracking zip passwords  
 
 # Wordlists   
+- Wordlist for french targets: https://github.com/clem9669/wordlists  <br/>
+- For internal pentests: https://github.com/p0dalirius/LDAPWordlistHarvester <br/>
 - username=password  <br/>
 - rockyou  <br/>
 - richelieu for french targets <br/>
 - SecLists (https://github.com/danielmiessler/SecLists)  <br/>
-- Wordlist for french targets: https://github.com/clem9669/wordlists  <br/> 
+
 <br>
 
 # Rules   
 - OneRuleToRuleThemAll: https://github.com/NotSoSecure/password_cracking_rules/blob/master/OneRuleToRuleThemAll.rule  <br/>
-- Rules for companies: https://github.com/clem9669/hashcat-rule <br/>  
+- Rules for companies: https://github.com/clem9669/hashcat-rule (https://github.com/clem9669/hashcat-rule/blob/master/clem9669_large.rule) <br/>  
 <br>
 
 # Cheatsheet  
