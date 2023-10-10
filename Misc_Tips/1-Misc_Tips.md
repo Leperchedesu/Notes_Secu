@@ -64,3 +64,51 @@ Target-side - Windows
 `del tmp_file_base64.txt`  
 *(Several techniques are from <https://notes.qazeer.io/general/file_transfer>)*    
   
+## Portscan behind a HTTP proxy (by @iansus):     
+```
+#!/usr/bin/python3
+ 
+import socket
+ 
+PROXY = 'proxy.client'
+PROXYPORT = 8080
+ 
+def portscan(domain, port):
+ 
+    s = socket.socket()
+    s.connect((PROXY, PROXYPORT))
+    
+    payload1 = 'CONNECT %(host)s:%(port)d\r\nHost: %(host)s:%(port)d\r\n\r\n' % {'host':domain, 'port':port}
+    s.send(bytes(payload1, 'utf-8'))
+    data = s.recv(1024)
+    assert(b'HTTP/1.1 200' in data)
+    
+    s.settimeout(0.5)
+    payload2 = 'GET / HTTP/1.1\r\nHost: %(host)s:%(port)d\r\n\r\n' % {'host':domain, 'port':port}
+    
+    s.send(bytes(payload2, 'utf-8'))
+    s.recv(1024)
+    
+ 
+domain = 'appli.client.fr'
+portstr = '7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157'
+ 
+ports = []
+for portdef in portstr.split(','):
+    if not '-' in portdef:
+        ports.append(int(portdef))
+        
+    else:
+        start, end = map(int, portdef.split('-'))
+        ports += range(start, end+1)
+ 
+ 
+for port in ports:
+    try:
+        portscan(domain, port)
+        print('Port %d is open on %s' % (port, domain))
+        
+    except Exception as e:
+        print('Port %d is closed on %s (%s)' % (port, domain, str(e)))
+        
+```
