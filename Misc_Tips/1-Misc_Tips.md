@@ -63,6 +63,11 @@ Target-side - Windows
 `certutil -decode tmp_file_base64.txt <OUTPUT_FILE>`  
 `del tmp_file_base64.txt`  
 *(Several techniques are from <https://notes.qazeer.io/general/file_transfer>)*    
+
+## Fix network errors on Windows  
+Flush the DNS cache : `ipconfig /flushdns`   
+Reset the Winsock program (Windows API used to interact with the TCP/IP stack) : `netsh winsock reset`   
+
   
 ## Portscan behind a HTTP proxy (by @iansus):     
 ```
